@@ -152,8 +152,10 @@ Estruturart Golden (ESG) offers a modern, secure, and accessible way to invest i
 ## Contact
 
 **Phone**: (31) 3309-7422
+
 **Email**: estruturart@estruturart.com.br
-**Address**: R. Paraíba, 550 - Sl 900 - 9º andar
+
+**Address**: R. Paraíba, 550 - 9th floor
 Savassi - Belo Horizonte - MG
 ZIP: 30130-141
 
@@ -163,6 +165,16 @@ ZIP: 30130-141
 
 ### Legal Documents
 
-📄 [**Download Share Assignment and Transfer Agreement (PDF)**](/documentation/MINUTA_CONTRATO_DE_CESSÃO_E_TRANSFERÊNCIA_DE_COTAS_150525%20-%20ESTRUTURART.pdf)
+📄 [**Share Assignment and Transfer Agreement**](/documentation/MINUTA_CONTRATO_DE_CESSÃO_E_TRANSFERÊNCIA_DE_COTAS_150525%20-%20ESTRUTURART.pdf)
 
 This document establishes the legal terms and conditions for the assignment and transfer of shares related to the gold backing of the Estruturart Golden (ESG) token.
+
+### BR GOLD Fund Documents
+
+📄 [**Participant Registration Form**](/documentation/BR%20GOLD%20FUNDO%20INVESTIMENTO%20-%20Ficha%20Cadastro%20Participantes.pdf)
+
+Document containing registration information of BR GOLD fund participants.
+
+📄 [**Financial Statement - 3rd Quarter 2025**](/documentation/BR%20GOLD%20FUNDO%20INVESTIMENTOS%20-%20Demonstrativo%20-%203%C2%BATRIM25.pdf)
+
+Financial statement of the BR GOLD fund for the third quarter of 2025.

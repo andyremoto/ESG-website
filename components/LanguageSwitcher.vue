@@ -13,7 +13,7 @@
         :key="locale.code"
         :value="locale.code"
       >
-        {{ locale.name }}
+        {{ getFlag(locale.code) }} {{ locale.name }}
       </option>
     </select>
   </div>
@@ -35,6 +35,15 @@ const availableLocales = computed(() => {
     )!
   ]).reverse()
 })
+
+// Função para retornar a bandeira do país baseado no código do idioma
+const getFlag = (localeCode: string): string => {
+  const flags: Record<string, string> = {
+    'en': '🇺🇸',
+    'pt-BR': '🇧🇷'
+  }
+  return flags[localeCode] || ''
+}
 
 const switchLocale = async () => {
   const path = switchLocalePath(selectedLocale.value)

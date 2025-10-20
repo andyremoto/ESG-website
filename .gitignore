@@ -39,3 +39,6 @@ dist
 .temp
 *.log
 .vercel
+
+# Draft files
+*.draft

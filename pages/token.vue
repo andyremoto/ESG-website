@@ -165,50 +165,133 @@
     </section>
 
     <!-- Technical Details -->
-    <section class="section bg-gradient-to-b from-gray-50 to-white relative overflow-hidden">
+    <section class="section bg-gradient-to-br from-black via-black-soft to-black relative overflow-hidden">
       <!-- Background decoration -->
-      <div class="absolute top-0 left-1/4 w-96 h-96 bg-gold/5 rounded-full filter blur-3xl"></div>
+      <div class="absolute top-0 right-1/4 w-96 h-96 bg-gold/10 rounded-full filter blur-3xl animate-float"></div>
+      <div class="absolute bottom-0 left-1/4 w-96 h-96 bg-orange/10 rounded-full filter blur-3xl animate-float-delayed"></div>
 
       <div class="container-custom relative z-10">
         <div class="animate-on-scroll" ref="detailsSection">
           <h2 class="text-4xl md:text-5xl font-bold text-center mb-16">
-            <span class="text-gradient-gold">{{ t('token.details.title') }}</span>
+            <span class="text-gradient-premium">{{ t('token.details.title') }}</span>
           </h2>
 
-          <div class="max-w-4xl mx-auto">
-            <div class="glass-dark p-8 md:p-12 rounded-3xl border border-gold/10 backdrop-blur-sm">
-              <div class="grid md:grid-cols-2 gap-8">
-                <div class="space-y-2">
-                  <p class="text-sm text-gold uppercase tracking-wider font-semibold">{{ t('token.details.chain') }}</p>
+          <div class="max-w-6xl mx-auto">
+            <!-- Grid de cards premium -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+              <!-- Blockchain -->
+              <div class="hover-lift">
+                <div class="h-full glass-gold p-6 rounded-2xl border border-gold/30 hover:border-gold/50 transition-all">
+                  <div class="flex items-center gap-3 mb-4">
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-gold-dark to-gold flex items-center justify-center shadow-glow">
+                      <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                      </svg>
+                    </div>
+                    <p class="text-xs text-gold/80 uppercase tracking-wider font-bold">{{ t('token.details.chain') }}</p>
+                  </div>
                   <p class="text-xl font-bold text-white">{{ t('token.details.chainValue') }}</p>
                 </div>
-                <div class="space-y-2">
-                  <p class="text-sm text-gold uppercase tracking-wider font-semibold">{{ t('token.details.standard') }}</p>
+              </div>
+
+              <!-- Standard -->
+              <div class="hover-lift">
+                <div class="h-full glass-gold p-6 rounded-2xl border border-gold/30 hover:border-gold/50 transition-all">
+                  <div class="flex items-center gap-3 mb-4">
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-gold-dark to-gold flex items-center justify-center shadow-glow">
+                      <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                      </svg>
+                    </div>
+                    <p class="text-xs text-gold/80 uppercase tracking-wider font-bold">{{ t('token.details.standard') }}</p>
+                  </div>
                   <p class="text-xl font-bold text-white">{{ t('token.details.standardValue') }}</p>
                 </div>
-                <div class="space-y-2">
-                  <p class="text-sm text-gold uppercase tracking-wider font-semibold">{{ t('token.details.decimals') }}</p>
+              </div>
+
+              <!-- Decimals -->
+              <div class="hover-lift">
+                <div class="h-full glass-gold p-6 rounded-2xl border border-gold/30 hover:border-gold/50 transition-all">
+                  <div class="flex items-center gap-3 mb-4">
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-gold-dark to-gold flex items-center justify-center shadow-glow">
+                      <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 20l4-16m2 16l4-16M6 9h14M4 15h14" />
+                      </svg>
+                    </div>
+                    <p class="text-xs text-gold/80 uppercase tracking-wider font-bold">{{ t('token.details.decimals') }}</p>
+                  </div>
                   <p class="text-xl font-bold text-white">18</p>
                 </div>
-                <div class="space-y-2">
-                  <p class="text-sm text-gold uppercase tracking-wider font-semibold">{{ t('token.details.supply') }}</p>
-                  <p class="text-xl font-bold text-white">{{ t('token.details.supplyLoading') }}</p>
+              </div>
+
+              <!-- Supply -->
+              <div class="hover-lift">
+                <div class="h-full glass-gold p-6 rounded-2xl border border-gold/30 hover:border-gold/50 transition-all">
+                  <div class="flex items-center gap-3 mb-4">
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-gold-dark to-gold flex items-center justify-center shadow-glow">
+                      <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                    </div>
+                    <p class="text-xs text-gold/80 uppercase tracking-wider font-bold">{{ t('token.details.supply') }}</p>
+                  </div>
+                  <p class="text-xl font-bold text-white">
+                    <span v-if="supplyLoading" class="flex items-center gap-2">
+                      <svg class="animate-spin h-4 w-4 text-gold" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                        <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                        <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                      </svg>
+                      <span class="text-sm">{{ t('token.details.supplyLoading') }}</span>
+                    </span>
+                    <span v-else-if="supplyError" class="text-red-400 text-sm">{{ t('token.details.supplyError') }}</span>
+                    <span v-else-if="supplyData" class="text-xl">{{ n(supplyData.totalSupply, 'decimal') }}</span>
+                    <span v-else>—</span>
+                  </p>
                 </div>
-                <div class="md:col-span-2 space-y-2 sm:space-y-3">
-                  <p class="text-xs sm:text-sm text-gold uppercase tracking-wider font-semibold">{{ t('token.details.contract') }}</p>
-                  <div class="flex flex-col sm:flex-row items-start sm:items-center gap-3">
-                    <code class="text-[10px] sm:text-xs md:text-sm font-mono bg-black/30 text-gold-light px-3 py-2 sm:px-4 sm:py-3 rounded-lg sm:rounded-xl w-full sm:flex-grow border border-gold/20 break-all sm:break-normal overflow-x-auto">
-                      {{ config.public.polygonContract }}
-                    </code>
-                    <a
-                      :href="`${config.public.polygonScanUrl}/token/${config.public.polygonContract}`"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      class="w-full sm:w-auto px-6 py-3 bg-gradient-to-r from-orange to-orange-light text-white text-sm sm:text-base font-semibold rounded-xl
-                             transition-all duration-300 hover:shadow-[0_0_40px_rgba(255,90,0,0.6)] hover:scale-105 whitespace-nowrap text-center"
-                    >
-                      View on Scan
-                    </a>
+              </div>
+            </div>
+
+            <!-- Contract Card - Destaque especial -->
+            <div class="relative group">
+              <!-- Glow effect -->
+              <div class="absolute -inset-2 bg-gradient-to-r from-gold/20 via-orange/20 to-gold/20 rounded-3xl blur-xl opacity-50 group-hover:opacity-75 transition-opacity"></div>
+
+              <!-- Card content -->
+              <div class="relative glass-gold p-8 rounded-3xl border-2 border-gold/40 hover:border-gold/60 transition-all">
+                <div class="flex flex-col lg:flex-row items-start lg:items-center gap-6">
+                  <!-- Icon + Label -->
+                  <div class="flex items-center gap-4 flex-shrink-0">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-gold-dark to-gold flex items-center justify-center shadow-glow">
+                      <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                      </svg>
+                    </div>
+                    <div>
+                      <p class="text-xs text-gold/80 uppercase tracking-wider font-bold mb-1">{{ t('token.details.contract') }}</p>
+                      <p class="text-sm text-white/90 font-medium">Smart Contract Address</p>
+                    </div>
+                  </div>
+
+                  <!-- Contract Address -->
+                  <div class="flex-grow w-full lg:w-auto">
+                    <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
+                      <code class="flex-grow text-xs sm:text-sm font-mono bg-black/20 text-white px-4 py-3 rounded-xl border border-gold/30 break-all overflow-x-auto font-semibold">
+                        {{ config.public.polygonContract }}
+                      </code>
+                      <a
+                        :href="`${config.public.polygonScanUrl}/token/${config.public.polygonContract}`"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="flex-shrink-0 group/btn px-6 py-3 bg-gradient-to-r from-orange to-orange-light text-white text-sm font-bold rounded-xl
+                               transition-all duration-300 hover:shadow-[0_0_40px_rgba(255,90,0,0.6)] hover:scale-105 whitespace-nowrap text-center
+                               inline-flex items-center justify-center gap-2"
+                      >
+                        <span>View on Scan</span>
+                        <svg class="w-4 h-4 transition-transform group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                        </svg>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -319,9 +402,12 @@
 <script setup lang="ts">
 import { onMounted, ref } from 'vue'
 
-const { t, locale } = useI18n()
+const { t, locale, n } = useI18n()
 const localePath = useLocalePath()
 const config = useRuntimeConfig()
+
+// Token supply data
+const { data: supplyData, loading: supplyLoading, error: supplyError } = useTokenSupply()
 
 // Refs for scroll animations
 const featuresSection = ref<HTMLElement | null>(null)

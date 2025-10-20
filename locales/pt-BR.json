@@ -52,6 +52,7 @@
       "decimals": "Decimais",
       "supply": "Oferta Circulante",
       "supplyLoading": "Carregando...",
+      "supplyError": "Erro ao carregar",
       "standard": "Padrão",
       "standardValue": "ERC-20"
     },
@@ -117,6 +118,10 @@
   "contact": {
     "title": "Contato",
     "subtitle": "Entre em contato com a equipe Estruturart Golden",
+    "company": {
+      "name": "Estruturart Securitizadora S/A",
+      "cnpj": "CNPJ: 10.664.744/0001-50"
+    },
     "institutional": {
       "title": "Contato Institucional",
       "phone": "Telefone",
@@ -124,11 +129,13 @@
       "email": "Email",
       "emailValue": "estruturart{'@'}estruturart.com.br",
       "address": "Endereço",
-      "addressValue": "R. Paraíba, 550 - Sl 900 - 9º andar",
+      "addressValue": "R. Paraíba, 550 - 9º andar",
       "addressCity": "Savassi - Belo Horizonte - MG",
       "addressZip": "CEP: 30130-141",
       "website": "Website",
-      "websiteValue": "estruturart.com.br"
+      "websiteValue": "estruturart.com.br",
+      "websiteBank": "Estruturart Bank",
+      "websiteBankValue": "estruturartbank.com.br"
     },
     "technical": {
       "title": "Informações Técnicas",
@@ -144,12 +151,17 @@
   },
   "footer": {
     "contract": "Contrato",
-    "copyright": "© {year} Estruturart. Todos os direitos reservados.",
+    "copyright": "© {year} Estruturart Securitizadora S/A. Todos os direitos reservados.",
+    "company": "Estruturart Securitizadora S/A",
+    "cnpj": "CNPJ: 10.664.744/0001-50",
     "legal": "Legal",
     "terms": "Termos de Uso",
     "privacy": "Privacidade",
     "documentation": "Documentação",
-    "social": "Redes Sociais"
+    "social": "Redes Sociais",
+    "groupCompanies": "Empresas do Grupo",
+    "estruturartCapital": "Estruturart Capital",
+    "estruturartBank": "Estruturart Bank"
   },
   "legal": {
     "terms": {
