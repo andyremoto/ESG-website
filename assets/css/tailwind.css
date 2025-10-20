@@ -1,0 +1,266 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply antialiased;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply bg-white text-black;
+  }
+
+  /* Reduce motion for users who prefer it */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+@layer components {
+  /* Button styles - Mobile optimized (min 44px touch target) */
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-6 py-3 min-h-[44px] bg-orange text-white font-semibold rounded-2xl
+      transition-all duration-150 hover:bg-orange-dark hover:shadow-card
+      focus:outline-none focus:ring-2 focus:ring-orange focus:ring-offset-2
+      active:scale-95;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center px-6 py-3 min-h-[44px] bg-transparent text-black font-semibold
+      border-2 border-black rounded-2xl transition-all duration-150
+      hover:bg-black hover:text-white hover:shadow-card
+      focus:outline-none focus:ring-2 focus:ring-black focus:ring-offset-2
+      active:scale-95;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center justify-center px-6 py-3 min-h-[44px] bg-transparent text-gold-dark font-semibold
+      border-2 border-gold-dark rounded-2xl transition-all duration-150
+      hover:bg-gold-dark hover:text-white hover:shadow-card
+      focus:outline-none focus:ring-2 focus:ring-gold-dark focus:ring-offset-2
+      active:scale-95;
+  }
+
+  /* Card styles */
+  .card {
+    @apply bg-white border border-gray-200 rounded-2xl shadow-card
+      transition-shadow duration-150 hover:shadow-card-hover;
+  }
+
+  /* Container - Mobile optimized */
+  .container-custom {
+    @apply max-w-7xl mx-auto px-5 sm:px-6 lg:px-8;
+  }
+
+  /* Section spacing - Mobile optimized */
+  .section {
+    @apply py-12 md:py-16 lg:py-24;
+  }
+
+  /* Price display - Mobile optimized */
+  .price-display {
+    @apply text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight;
+  }
+
+  /* Link styles */
+  .link {
+    @apply text-gold-dark hover:text-gold transition-colors duration-150 underline-offset-4 hover:underline;
+  }
+
+  /* Mobile-first typography */
+  .heading-xl {
+    @apply text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight;
+  }
+
+  .heading-lg {
+    @apply text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight;
+  }
+
+  .heading-md {
+    @apply text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight;
+  }
+
+  .heading-sm {
+    @apply text-xl sm:text-2xl md:text-3xl font-bold leading-tight;
+  }
+
+  .body-lg {
+    @apply text-lg sm:text-xl md:text-2xl leading-relaxed;
+  }
+
+  .body-base {
+    @apply text-base sm:text-lg leading-relaxed;
+  }
+}
+
+@layer utilities {
+  /* Glass effect - Glassmorphism */
+  .glass {
+    @apply bg-white/80 backdrop-blur-sm;
+  }
+
+  .glass-dark {
+    @apply bg-black/20 backdrop-blur-md border border-white/10;
+  }
+
+  .glass-gold {
+    @apply bg-gold/10 backdrop-blur-lg border border-gold/20;
+  }
+
+  /* Text gradient */
+  .text-gradient-gold {
+    @apply bg-gradient-to-r from-gold-dark via-gold to-gold-light bg-clip-text text-transparent;
+  }
+
+  .text-gradient-premium {
+    background: linear-gradient(135deg, #8A6B2D 0%, #C9A959 50%, #E9D7A8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Premium gradients */
+  .bg-gradient-radial {
+    background: radial-gradient(circle at top right, rgba(201, 169, 89, 0.1) 0%, transparent 70%);
+  }
+
+  .bg-gradient-premium {
+    background: linear-gradient(135deg, #111111 0%, #1A1A1A 50%, #111111 100%);
+  }
+
+  /* Shimmer effect */
+  .shimmer-line {
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      rgba(201, 169, 89, 0.3) 50%,
+      transparent 100%
+    );
+    background-size: 200% 100%;
+  }
+
+  /* Hide scrollbar but keep functionality */
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Smooth scroll */
+  .scroll-smooth {
+    scroll-behavior: smooth;
+  }
+
+  /* Animations - initial state */
+  .animate-on-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  }
+
+  .animate-on-scroll.animate-in {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Hover lift effect */
+  .hover-lift {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .hover-lift:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  }
+
+  /* Premium video container - Mobile optimized */
+  .video-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 1rem;
+  }
+
+  @media (min-width: 768px) {
+    .video-container {
+      border-radius: 1.5rem;
+    }
+  }
+
+  .video-container::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at center, transparent 40%, rgba(0, 0, 0, 0.3) 100%);
+    pointer-events: none;
+  }
+
+  /* Video mobile optimization */
+  .video-mobile-optimized {
+    @apply w-full h-auto;
+    object-fit: cover;
+  }
+
+  @media (max-width: 767px) {
+    .video-mobile-optimized {
+      max-height: 400px;
+      object-position: center;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .video-mobile-optimized {
+      max-height: 600px;
+    }
+  }
+
+  /* Mobile card padding optimization */
+  .card-mobile-optimized {
+    @apply p-5 sm:p-6 md:p-8;
+  }
+
+  /* Mobile button sizing */
+  .btn-mobile-lg {
+    @apply px-6 py-4 text-base min-h-[48px];
+  }
+
+  @media (min-width: 640px) {
+    .btn-mobile-lg {
+      @apply px-8 py-4 text-lg;
+    }
+  }
+
+  /* Mobile grid optimization */
+  .grid-mobile-stack {
+    @apply grid grid-cols-1 gap-4;
+  }
+
+  @media (min-width: 640px) {
+    .grid-mobile-stack {
+      @apply gap-6;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .grid-mobile-stack {
+      @apply grid-cols-2 gap-8;
+    }
+  }
+
+  /* Safe area for mobile */
+  .safe-mobile {
+    @apply pb-safe;
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+}

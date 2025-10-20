@@ -1,0 +1,158 @@
+/* Print styles for documentation pages */
+@media print {
+  @page {
+    size: A4;
+    margin: 2cm;
+  }
+
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  body {
+    font-size: 12pt;
+    line-height: 1.5;
+    color: #111111;
+    background: white;
+  }
+
+  /* Hide interactive elements */
+  nav,
+  footer,
+  .no-print,
+  button,
+  .btn-primary,
+  .btn-secondary,
+  .print-button,
+  .language-switcher {
+    display: none !important;
+  }
+
+  /* Remove shadows and transitions */
+  .card,
+  .shadow-card,
+  .shadow-card-hover {
+    box-shadow: none !important;
+  }
+
+  /* Optimize links for print */
+  a[href]:after {
+    content: " (" attr(href) ")";
+    font-size: 10pt;
+    color: #666;
+  }
+
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: "";
+  }
+
+  /* Page breaks */
+  h1, h2, h3, h4, h5, h6 {
+    page-break-after: avoid;
+    page-break-inside: avoid;
+  }
+
+  p, li {
+    orphans: 3;
+    widows: 3;
+  }
+
+  img, figure, table {
+    page-break-inside: avoid;
+  }
+
+  /* Content styles */
+  article {
+    max-width: 100% !important;
+    padding: 0 !important;
+  }
+
+  h1 {
+    font-size: 24pt;
+    margin-bottom: 12pt;
+    border-bottom: 2px solid #8A6B2D;
+    padding-bottom: 6pt;
+  }
+
+  h2 {
+    font-size: 18pt;
+    margin-top: 18pt;
+    margin-bottom: 10pt;
+  }
+
+  h3 {
+    font-size: 14pt;
+    margin-top: 14pt;
+    margin-bottom: 8pt;
+  }
+
+  p {
+    margin-bottom: 10pt;
+    text-align: justify;
+  }
+
+  ul, ol {
+    margin-left: 20pt;
+    margin-bottom: 10pt;
+  }
+
+  code {
+    font-family: 'Courier New', monospace;
+    background: #f5f5f5;
+    padding: 2pt 4pt;
+    border: 1px solid #ddd;
+    border-radius: 2pt;
+  }
+
+  pre {
+    background: #f5f5f5;
+    border: 1px solid #ddd;
+    padding: 10pt;
+    overflow: visible;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 10pt;
+  }
+
+  th, td {
+    border: 1px solid #ddd;
+    padding: 6pt;
+    text-align: left;
+  }
+
+  th {
+    background: #f5f5f5;
+    font-weight: bold;
+  }
+
+  /* Ensure images fit on page */
+  img {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
+  /* Header for printed pages */
+  .print-header {
+    display: block !important;
+    margin-bottom: 20pt;
+    padding-bottom: 10pt;
+    border-bottom: 1px solid #ddd;
+  }
+
+  /* Footer for printed pages */
+  .print-footer {
+    display: block !important;
+    margin-top: 20pt;
+    padding-top: 10pt;
+    border-top: 1px solid #ddd;
+    font-size: 10pt;
+    color: #666;
+  }
+}

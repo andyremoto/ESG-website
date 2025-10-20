@@ -1,0 +1,196 @@
+{
+  "nav": {
+    "home": "Home",
+    "token": "Token",
+    "howItWorks": "How It Works",
+    "documentation": "Documentation",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "One gram. One token. Transparent gold exposure.",
+    "subtitle": "Estruturart Golden (ESG) tracks the price of 1 gram of certified gold, with institutional governance and on-chain transparency.",
+    "pegging": "1 ESG = 1 gram of gold",
+    "esgUsd": "Estruturart Golden/USD",
+    "esgBrl": "Estruturart Golden/BRL",
+    "lastUpdated": "Last updated",
+    "change24h": "24h change",
+    "demo": "Demo data"
+  },
+  "ctas": {
+    "readDocs": "Read Documentation",
+    "viewOnScan": "View on PolygonScan",
+    "learnMore": "Learn More",
+    "viewDetails": "View Details",
+    "download": "Download",
+    "print": "Print",
+    "contact": "Contact Us"
+  },
+  "token": {
+    "title": "About the Token",
+    "subtitle": "Estruturart Golden (ESG) is a digital token backed by certified gold",
+    "backing": {
+      "title": "Certified Gold Backing",
+      "description": "Each Estruturart Golden (ESG) token represents 1 gram of certified physical gold, stored in institutional custody."
+    },
+    "governance": {
+      "title": "Multisig Governance",
+      "description": "Contracts managed via Safe (Gnosis Safe) with multiple signatures for critical operations."
+    },
+    "policy": {
+      "title": "Mint/Burn Policy",
+      "description": "Controlled, audited and transparent issuance and burning, linked to physical gold in custody."
+    },
+    "emergency": {
+      "title": "Emergency Controls",
+      "description": "Pause and blacklist functionalities for protection against adverse events."
+    },
+    "details": {
+      "title": "Technical Details",
+      "chain": "Blockchain",
+      "chainValue": "Polygon (PoS)",
+      "contract": "Contract",
+      "decimals": "Decimals",
+      "supply": "Circulating Supply",
+      "supplyLoading": "Loading...",
+      "standard": "Standard",
+      "standardValue": "ERC-20"
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "q1": "How is Estruturart Golden (ESG) backed?",
+      "a1": "Each Estruturart Golden (ESG) token is backed by 1 gram of certified physical gold, stored in regulated institutional custody. The backing is regularly audited.",
+      "q2": "Can I redeem physical gold?",
+      "a2": "Yes, under specific conditions and through the authorized primary desk. Consult the full documentation for redemption procedures.",
+      "q3": "What's the difference between Estruturart Golden (ESG) and other gold tokens?",
+      "a3": "Estruturart Golden (ESG) offers multisig governance, complete on-chain transparency and is issued by a regulated Brazilian institution.",
+      "q4": "How does the issuance of new tokens work?",
+      "a4": "New tokens are only issued when there is acquisition and custody of corresponding physical gold, always ensuring 100% backing."
+    }
+  },
+  "howItWorks": {
+    "title": "How It Works",
+    "subtitle": "Three simple steps connect you to the global gold market",
+    "step1": {
+      "title": "1. Gold Backing",
+      "description": "Certified gold is acquired and stored in regulated institutional custody, creating the backing foundation."
+    },
+    "step2": {
+      "title": "2. Tokenization",
+      "description": "Estruturart Golden (ESG) tokens are issued on the Polygon blockchain, each representing 1 gram of physical gold."
+    },
+    "step3": {
+      "title": "3. Redemption & Primary Desk",
+      "description": "Tokens can be redeemed for physical gold through the primary desk, or traded on the secondary market."
+    },
+    "benefits": {
+      "title": "Benefits",
+      "liquidity": {
+        "title": "24/7 Liquidity",
+        "description": "Trade anytime, without time restrictions"
+      },
+      "fractional": {
+        "title": "Fractional Ownership",
+        "description": "Acquire minimal fractions of gold with low investment"
+      },
+      "transparency": {
+        "title": "Full Transparency",
+        "description": "All operations recorded and verifiable on-chain"
+      },
+      "security": {
+        "title": "Institutional Security",
+        "description": "Regulated custody and multisig governance"
+      }
+    }
+  },
+  "documentation": {
+    "title": "Documentation",
+    "subtitle": "Access all technical and institutional documentation for Estruturart Golden (ESG)",
+    "sections": {
+      "whitepaper": "Whitepaper",
+      "transparency": "Transparency",
+      "custody": "Custody",
+      "faq": "Complete FAQ"
+    },
+    "backToList": "Back to Documentation",
+    "tableOfContents": "Table of Contents"
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Get in touch with the Estruturart Golden team",
+    "institutional": {
+      "title": "Institutional Contact",
+      "phone": "Phone",
+      "phoneValue": "(31) 3309-7422",
+      "email": "Email",
+      "emailValue": "estruturart{'@'}estruturart.com.br",
+      "address": "Address",
+      "addressValue": "R. Paraíba, 550 - Sl 900 - 9º andar",
+      "addressCity": "Savassi - Belo Horizonte - MG",
+      "addressZip": "ZIP: 30130-141",
+      "website": "Website",
+      "websiteValue": "estruturart.com.br"
+    },
+    "technical": {
+      "title": "Technical Information",
+      "contract": "Smart Contract",
+      "explorer": "Explorer",
+      "network": "Network",
+      "networkValue": "Polygon PoS"
+    },
+    "support": {
+      "title": "Support",
+      "description": "For questions about the token, documentation or technical integration, contact us via institutional email."
+    }
+  },
+  "footer": {
+    "contract": "Contract",
+    "copyright": "© {year} Estruturart. All rights reserved.",
+    "legal": "Legal",
+    "terms": "Terms of Use",
+    "privacy": "Privacy",
+    "documentation": "Documentation",
+    "social": "Social Media"
+  },
+  "legal": {
+    "terms": {
+      "title": "Terms of Use",
+      "lastUpdated": "Last updated"
+    },
+    "privacy": {
+      "title": "Privacy Policy",
+      "lastUpdated": "Last updated"
+    }
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Error loading data",
+    "retry": "Try Again",
+    "close": "Close",
+    "readMore": "Read More",
+    "showLess": "Show Less",
+    "language": "Language",
+    "selectLanguage": "Select language"
+  },
+  "meta": {
+    "home": {
+      "title": "Estruturart Golden (ESG) - Gold-Backed Token",
+      "description": "Estruturart Golden (ESG) is a digital token backed by certified gold. Each token represents 1 gram of physical gold with institutional governance and on-chain transparency."
+    },
+    "token": {
+      "title": "About the Token - Estruturart Golden (ESG)",
+      "description": "Learn about the technical details of Estruturart Golden (ESG), a gold-backed token on the Polygon blockchain."
+    },
+    "howItWorks": {
+      "title": "How It Works - Estruturart Golden (ESG)",
+      "description": "Understand how gold tokenization works, from physical backing to redemption through the primary desk."
+    },
+    "documentation": {
+      "title": "Documentation - Estruturart Golden (ESG)",
+      "description": "Access complete documentation about the Estruturart Golden (ESG) token, including whitepaper, transparency and custody."
+    },
+    "contact": {
+      "title": "Contact - Estruturart Golden (ESG)",
+      "description": "Contact the Estruturart Golden team for institutional and technical inquiries."
+    }
+  }
+}

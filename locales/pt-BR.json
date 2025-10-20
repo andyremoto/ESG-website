@@ -1,0 +1,196 @@
+{
+  "nav": {
+    "home": "Início",
+    "token": "Token",
+    "howItWorks": "Como Funciona",
+    "documentation": "Documentação",
+    "contact": "Contato"
+  },
+  "hero": {
+    "title": "Um grama. Um token. Exposição transparente ao ouro.",
+    "subtitle": "Estruturart Golden (ESG) acompanha o preço de 1 g de ouro certificado, com governança institucional e transparência on-chain.",
+    "pegging": "1 ESG = 1 g de ouro",
+    "esgUsd": "Estruturart Golden/USD",
+    "esgBrl": "Estruturart Golden/BRL",
+    "lastUpdated": "Última atualização",
+    "change24h": "Variação 24h",
+    "demo": "Dados de demonstração"
+  },
+  "ctas": {
+    "readDocs": "Ler Documentação",
+    "viewOnScan": "Ver no PolygonScan",
+    "learnMore": "Saiba Mais",
+    "viewDetails": "Ver Detalhes",
+    "download": "Baixar",
+    "print": "Imprimir",
+    "contact": "Entre em Contato"
+  },
+  "token": {
+    "title": "Sobre o Token",
+    "subtitle": "Estruturart Golden (ESG) é um token digital lastreado em ouro certificado",
+    "backing": {
+      "title": "Lastro em Ouro Certificado",
+      "description": "Cada token Estruturart Golden (ESG) representa 1 grama de ouro físico certificado, armazenado em custódia institucional."
+    },
+    "governance": {
+      "title": "Governança Multisig",
+      "description": "Contratos gerenciados via Safe (Gnosis Safe) com múltiplas assinaturas para operações críticas."
+    },
+    "policy": {
+      "title": "Política de Mint/Burn",
+      "description": "Emissão e queima controladas, auditadas e transparentes, vinculadas ao ouro físico em custódia."
+    },
+    "emergency": {
+      "title": "Controles de Emergência",
+      "description": "Funcionalidades de pausa e blacklist para proteção contra eventos adversos."
+    },
+    "details": {
+      "title": "Detalhes Técnicos",
+      "chain": "Blockchain",
+      "chainValue": "Polygon (PoS)",
+      "contract": "Contrato",
+      "decimals": "Decimais",
+      "supply": "Oferta Circulante",
+      "supplyLoading": "Carregando...",
+      "standard": "Padrão",
+      "standardValue": "ERC-20"
+    },
+    "faq": {
+      "title": "Perguntas Frequentes",
+      "q1": "Como o Estruturart Golden (ESG) é lastreado?",
+      "a1": "Cada token Estruturart Golden (ESG) é lastreado por 1 grama de ouro físico certificado, armazenado em custódia institucional regulamentada. O lastro é auditado regularmente.",
+      "q2": "Posso resgatar ouro físico?",
+      "a2": "Sim, mediante condições específicas e através da mesa primária autorizada. Consulte a documentação completa para procedimentos de resgate.",
+      "q3": "Qual a diferença do Estruturart Golden (ESG) para outros tokens de ouro?",
+      "a3": "Estruturart Golden (ESG) oferece governança via multisig, transparência on-chain completa e é emitido por uma instituição brasileira regulamentada.",
+      "q4": "Como funciona a emissão de novos tokens?",
+      "a4": "Novos tokens só são emitidos quando há aquisição e custódia de ouro físico correspondente, garantindo sempre 100% de lastro."
+    }
+  },
+  "howItWorks": {
+    "title": "Como Funciona",
+    "subtitle": "Três etapas simples conectam você ao mercado global de ouro",
+    "step1": {
+      "title": "1. Lastro em Ouro",
+      "description": "Ouro certificado é adquirido e armazenado em custódia institucional regulamentada, criando a base de lastro."
+    },
+    "step2": {
+      "title": "2. Tokenização",
+      "description": "Tokens Estruturart Golden (ESG) são emitidos na blockchain Polygon, cada um representando 1 grama de ouro físico."
+    },
+    "step3": {
+      "title": "3. Resgate & Mesa Primária",
+      "description": "Tokens podem ser resgatados por ouro físico através da mesa primária, ou negociados no mercado secundário."
+    },
+    "benefits": {
+      "title": "Benefícios",
+      "liquidity": {
+        "title": "Liquidez 24/7",
+        "description": "Negocie a qualquer momento, sem restrições de horário"
+      },
+      "fractional": {
+        "title": "Fracionamento",
+        "description": "Adquira frações mínimas de ouro com baixo investimento"
+      },
+      "transparency": {
+        "title": "Transparência Total",
+        "description": "Todas as operações registradas e verificáveis on-chain"
+      },
+      "security": {
+        "title": "Segurança Institucional",
+        "description": "Custódia regulamentada e governança multisig"
+      }
+    }
+  },
+  "documentation": {
+    "title": "Documentação",
+    "subtitle": "Acesse toda a documentação técnica e institucional do Estruturart Golden (ESG)",
+    "sections": {
+      "whitepaper": "Whitepaper",
+      "transparency": "Transparência",
+      "custody": "Custódia",
+      "faq": "FAQ Completo"
+    },
+    "backToList": "Voltar para Documentação",
+    "tableOfContents": "Índice"
+  },
+  "contact": {
+    "title": "Contato",
+    "subtitle": "Entre em contato com a equipe Estruturart Golden",
+    "institutional": {
+      "title": "Contato Institucional",
+      "phone": "Telefone",
+      "phoneValue": "(31) 3309-7422",
+      "email": "Email",
+      "emailValue": "estruturart{'@'}estruturart.com.br",
+      "address": "Endereço",
+      "addressValue": "R. Paraíba, 550 - Sl 900 - 9º andar",
+      "addressCity": "Savassi - Belo Horizonte - MG",
+      "addressZip": "CEP: 30130-141",
+      "website": "Website",
+      "websiteValue": "estruturart.com.br"
+    },
+    "technical": {
+      "title": "Informações Técnicas",
+      "contract": "Contrato Inteligente",
+      "explorer": "Explorador",
+      "network": "Rede",
+      "networkValue": "Polygon PoS"
+    },
+    "support": {
+      "title": "Suporte",
+      "description": "Para questões sobre o token, documentação ou integração técnica, entre em contato através do email institucional."
+    }
+  },
+  "footer": {
+    "contract": "Contrato",
+    "copyright": "© {year} Estruturart. Todos os direitos reservados.",
+    "legal": "Legal",
+    "terms": "Termos de Uso",
+    "privacy": "Privacidade",
+    "documentation": "Documentação",
+    "social": "Redes Sociais"
+  },
+  "legal": {
+    "terms": {
+      "title": "Termos de Uso",
+      "lastUpdated": "Última atualização"
+    },
+    "privacy": {
+      "title": "Política de Privacidade",
+      "lastUpdated": "Última atualização"
+    }
+  },
+  "common": {
+    "loading": "Carregando...",
+    "error": "Erro ao carregar dados",
+    "retry": "Tentar Novamente",
+    "close": "Fechar",
+    "readMore": "Ler Mais",
+    "showLess": "Mostrar Menos",
+    "language": "Idioma",
+    "selectLanguage": "Selecionar idioma"
+  },
+  "meta": {
+    "home": {
+      "title": "Estruturart Golden (ESG) - Token Lastreado em Ouro",
+      "description": "Estruturart Golden (ESG) é um token digital lastreado em ouro certificado. Cada token representa 1 grama de ouro físico com governança institucional e transparência on-chain."
+    },
+    "token": {
+      "title": "Sobre o Token - Estruturart Golden (ESG)",
+      "description": "Conheça os detalhes técnicos do Estruturart Golden (ESG), token lastreado em ouro certificado na blockchain Polygon."
+    },
+    "howItWorks": {
+      "title": "Como Funciona - Estruturart Golden (ESG)",
+      "description": "Entenda como funciona a tokenização de ouro, do lastro físico ao resgate através da mesa primária."
+    },
+    "documentation": {
+      "title": "Documentação - Estruturart Golden (ESG)",
+      "description": "Acesse a documentação completa sobre o token Estruturart Golden (ESG), incluindo whitepaper, transparência e custódia."
+    },
+    "contact": {
+      "title": "Contato - Estruturart Golden (ESG)",
+      "description": "Entre em contato com a equipe Estruturart Golden para questões institucionais e técnicas."
+    }
+  }
+}
