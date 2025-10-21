@@ -891,6 +891,8 @@ onMounted(() => {
 })
 
 // SEO
+const ogImageUrl = computed(() => `${config.public.siteUrl}/og-image.jpg`)
+
 useHead({
   title: t('meta.home.title'),
   meta: [
@@ -898,12 +900,14 @@ useHead({
     { property: 'og:title', content: t('meta.home.title') },
     { property: 'og:description', content: t('meta.home.description') },
     { property: 'og:type', content: 'website' },
-    { property: 'og:image', content: 'https://main.d1ilbw9lpr1mql.amplifyapp.com/coin.png' },
+    { property: 'og:image', content: ogImageUrl },
+    { property: 'og:image:width', content: '1200' },
+    { property: 'og:image:height', content: '630' },
     { property: 'og:url', content: config.public.siteUrl },
     { name: 'twitter:card', content: 'summary_large_image' },
     { name: 'twitter:title', content: t('meta.home.title') },
     { name: 'twitter:description', content: t('meta.home.description') },
-    { name: 'twitter:image', content: 'https://main.d1ilbw9lpr1mql.amplifyapp.com/coin.png' }
+    { name: 'twitter:image', content: ogImageUrl }
   ]
 })
 </script>

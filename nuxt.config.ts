@@ -106,7 +106,7 @@ export default defineNuxtConfig({
         // Open Graph / Facebook
         { property: 'og:type', content: 'website' },
         { property: 'og:site_name', content: 'Estruturart Golden (ESG)' },
-        { property: 'og:image', content: 'https://main.d1ilbw9lpr1mql.amplifyapp.com/logo.png' },
+        { property: 'og:image', content: '/og-image.jpg' },
         { property: 'og:image:width', content: '1200' },
         { property: 'og:image:height', content: '630' },
         { property: 'og:image:alt', content: 'Estruturart Golden - Token Lastreado em Ouro' },
@@ -115,7 +115,7 @@ export default defineNuxtConfig({
 
         // Twitter Card
         { name: 'twitter:card', content: 'summary_large_image' },
-        { name: 'twitter:image', content: 'https://main.d1ilbw9lpr1mql.amplifyapp.com/logo.png' },
+        { name: 'twitter:image', content: '/og-image.jpg' },
         { name: 'twitter:image:alt', content: 'Estruturart Golden - Token Lastreado em Ouro' },
 
         // Additional SEO
