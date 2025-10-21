@@ -63,13 +63,14 @@ export default defineEventHandler(async (event): Promise<PriceData> => {
     const goldPerGramUSD_ask = goldAskPerOunce / TROY_OUNCE_TO_GRAMS // You PAY this when buying ESG
 
     // Calculate ESG prices (1 ESG = 1 gram of gold)
+    // Apply OTC margins: +1% for buy (ask), -5% for sell (bid)
     const esgUSD = goldPerGramUSD  // Mid price
-    const esgUSD_bid = goldPerGramUSD_bid  // SELL/REDEEM ESG price
-    const esgUSD_ask = goldPerGramUSD_ask  // BUY ESG price
+    const esgUSD_bid = goldPerGramUSD_bid * 0.95  // SELL/REDEEM ESG price (-5% margin)
+    const esgUSD_ask = goldPerGramUSD_ask * 1.01  // BUY ESG price (+1% margin)
 
     const esgBRL = goldPerGramUSD * brlRate  // Mid price in BRL
-    const esgBRL_bid = goldPerGramUSD_bid * brlRate  // SELL/REDEEM in BRL
-    const esgBRL_ask = goldPerGramUSD_ask * brlRate  // BUY in BRL
+    const esgBRL_bid = goldPerGramUSD_bid * brlRate * 0.95  // SELL/REDEEM in BRL (-5% margin)
+    const esgBRL_ask = goldPerGramUSD_ask * brlRate * 1.01  // BUY in BRL (+1% margin)
 
     // Calculate 24h change if available (placeholder for now)
     const change24hPct = isDemo ? 1.2 : undefined
@@ -97,35 +98,7 @@ export default defineEventHandler(async (event): Promise<PriceData> => {
   } catch (error) {
     console.error('[Prices API] Error fetching prices:', error)
 
-    // Return demo data on error
-    const goldPriceUSD = 2650.00
-    const goldBidUSD = 2648.00
-    const goldAskUSD = 2652.00
-    const usdbrl = 5.75
-
-    const goldPerGram = goldPriceUSD / TROY_OUNCE_TO_GRAMS
-    const goldPerGramBid = goldBidUSD / TROY_OUNCE_TO_GRAMS
-    const goldPerGramAsk = goldAskUSD / TROY_OUNCE_TO_GRAMS
-
-    const demoData: PriceData = {
-      esgUSD: goldPerGram,
-      esgUSD_bid: goldPerGramBid,
-      esgUSD_ask: goldPerGramAsk,
-      esgBRL: goldPerGram * usdbrl,
-      esgBRL_bid: goldPerGramBid * usdbrl,
-      esgBRL_ask: goldPerGramAsk * usdbrl,
-      goldPerGramUSD: goldPerGram,
-      goldPerGramUSD_bid: goldPerGramBid,
-      goldPerGramUSD_ask: goldPerGramAsk,
-      goldPerOunceUSD: goldPriceUSD,
-      goldPerOunceUSD_bid: goldBidUSD,
-      goldPerOunceUSD_ask: goldAskUSD,
-      usdbrl,
-      lastUpdatedISO: new Date().toISOString(),
-      demo: true,
-      change24hPct: 1.2
-    }
-
-    return demoData
+    // NO DEMO DATA - re-throw error so clients see that prices are unavailable
+    throw error
   }
 })

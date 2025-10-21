@@ -8,8 +8,8 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     '@nuxt/content',
     '@nuxtjs/i18n',
-    '@nuxtjs/sitemap',
-    '@nuxtjs/robots'
+    // '@nuxtjs/sitemap', // Disabled - incompatible with Nuxt Content v3
+    // '@nuxtjs/robots'   // Disabled - incompatible with Nuxt Content v3
   ],
 
   devtools: { enabled: true },
@@ -38,7 +38,6 @@ export default defineNuxtConfig({
     defaultLocale: 'pt-BR',
     strategy: 'prefix_except_default',
     lazy: true,
-    langDir: 'locales',
     detectBrowserLanguage: {
       useCookie: true,
       cookieKey: 'i18n_redirected',
@@ -46,7 +45,6 @@ export default defineNuxtConfig({
       alwaysRedirect: false,
       fallbackLocale: 'pt-BR'
     },
-    vueI18n: './i18n.config.ts',
     customRoutes: 'config',
     pages: {
       'token': {
@@ -105,24 +103,6 @@ export default defineNuxtConfig({
         { rel: 'icon', type: 'image/png', href: '/favicon.png' }
       ]
     }
-  },
-
-  // SEO & Sitemap
-  site: {
-    url: process.env.SITE_URL || 'http://localhost:3000',
-    name: 'Estruturart Golden (ESG)',
-    trailingSlash: false
-  },
-
-  robots: {
-    groups: [
-      {
-        userAgent: '*',
-        allow: '/',
-        disallow: []
-      }
-    ],
-    sitemap: `${process.env.SITE_URL || 'http://localhost:3000'}/sitemap.xml`
   },
 
   // Nitro configuration for better SSR

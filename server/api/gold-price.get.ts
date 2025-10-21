@@ -27,7 +27,7 @@ interface CachedData {
 
 // In-memory cache (survives for the duration of the server process)
 let cache: CachedData | null = null
-const CACHE_DURATION = 60 * 1000 // 1 minute in milliseconds
+const CACHE_DURATION = 30 * 60 * 1000 // 30 minutes in milliseconds (respects API rate limits)
 
 export default defineEventHandler(async (event) => {
   const config = useRuntimeConfig()
@@ -43,29 +43,14 @@ export default defineEventHandler(async (event) => {
     }
   }
 
-  // If no API key is configured, return demo data
+  // If no API key is configured, throw error - never show fake prices to clients
   if (!config.metalsApiKey) {
-    console.log('[Gold API] No API key configured, returning demo data')
-    const demoData: MetalsApiResponse = {
-      status: 'success',
-      currency: 'USD',
-      unit: 'toz',
-      metals: {
-        gold: 2650.00, // Current approximate gold price
-        silver: 30.50
-      },
-      currencies: {
-        BRL: 5.75,
-        EUR: 0.92,
-        GBP: 0.79
-      },
-      timestamp: new Date().toISOString()
-    }
-
-    return {
-      ...demoData,
-      demo: true
-    }
+    console.error('[Gold API] CRITICAL: No API key configured. Set METALS_API_KEY in .env')
+    throw createError({
+      statusCode: 503,
+      statusMessage: 'Gold price API is not configured. Please contact support.',
+      message: 'METALS_API_KEY environment variable is required'
+    })
   }
 
   try {
@@ -153,28 +138,12 @@ export default defineEventHandler(async (event) => {
       }
     }
 
-    // Return demo data as fallback
-    console.log('[Gold API] Returning demo data due to API error')
-    const demoData: MetalsApiResponse = {
-      status: 'error',
-      currency: 'USD',
-      unit: 'toz',
-      metals: {
-        gold: 2650.00,
-        silver: 30.50
-      },
-      currencies: {
-        BRL: 5.75,
-        EUR: 0.92,
-        GBP: 0.79
-      },
-      timestamp: new Date().toISOString()
-    }
-
-    return {
-      ...demoData,
-      demo: true,
-      error: error.message
-    }
+    // NO DEMO DATA - throw error so clients see that prices are unavailable
+    console.error('[Gold API] CRITICAL: API failed and no cache available')
+    throw createError({
+      statusCode: 503,
+      statusMessage: 'Unable to fetch gold prices. Please try again later.',
+      message: `Metals.dev API error: ${error.message}`
+    })
   }
 })
