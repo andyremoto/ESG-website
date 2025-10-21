@@ -891,7 +891,10 @@ onMounted(() => {
 })
 
 // SEO
-const ogImageUrl = computed(() => `${config.public.siteUrl}/og-image.jpg`)
+const ogImageUrl = computed(() => {
+  const baseUrl = config.public.siteUrl.replace(/\/$/, '') // Remove trailing slash
+  return `${baseUrl}/og-image.jpg`
+})
 
 useHead({
   title: t('meta.home.title'),
