@@ -42,3 +42,6 @@ dist
 
 # Draft files
 *.draft
+
+# Nuxt Content Database
+.data
