@@ -225,7 +225,8 @@ const whatsappLink = computed(() => {
     ? `Olá! Tenho interesse em ${action} ESG (Estruturart Golden). Poderia me fornecer mais informações sobre a negociação OTC?`
     : `Hello! I am interested in ${action === 'buy' ? 'buying' : 'selling'} ESG (Estruturart Golden). Could you provide more information about OTC trading?`
 
-  return `https://wa.me/${phone}?text=${encodeURIComponent(message)}`
+  // Use api.whatsapp.com instead of wa.me for better desktop compatibility
+  return `https://api.whatsapp.com/send?phone=${phone}&text=${encodeURIComponent(message)}`
 })
 
 // WhatsApp link for error state (generic trade inquiry)
@@ -235,7 +236,8 @@ const whatsappLinkError = computed(() => {
     ? `Olá! Gostaria de obter informações sobre os preços atuais do ESG (Estruturart Golden) e realizar uma negociação OTC.`
     : `Hello! I would like to get information about current ESG (Estruturart Golden) prices and make an OTC trade.`
 
-  return `https://wa.me/${phone}?text=${encodeURIComponent(message)}`
+  // Use api.whatsapp.com instead of wa.me for better desktop compatibility
+  return `https://api.whatsapp.com/send?phone=${phone}&text=${encodeURIComponent(message)}`
 })
 </script>
 

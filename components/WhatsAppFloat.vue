@@ -46,6 +46,7 @@ const whatsappLink = computed(() => {
     ? 'Olá! Gostaria de obter mais informações sobre o Estruturart Golden (ESG).'
     : 'Hello! I would like to get more information about Estruturart Golden (ESG).'
 
-  return `https://wa.me/${phone}?text=${encodeURIComponent(message)}`
+  // Use api.whatsapp.com instead of wa.me for better desktop compatibility
+  return `https://api.whatsapp.com/send?phone=${phone}&text=${encodeURIComponent(message)}`
 })
 </script>
