@@ -163,12 +163,6 @@ CEP: 30130-141
 
 ## Anexos
 
-### Documentos Legais
-
-📄 [**Minuta do Contrato de Cessão e Transferência de Cotas**](/documentation/MINUTA_CONTRATO_DE_CESSÃO_E_TRANSFERÊNCIA_DE_COTAS_150525%20-%20ESTRUTURART.pdf)
-
-Este documento estabelece os termos e condições legais para a cessão e transferência de cotas relacionadas ao lastro em ouro do token Estruturart Golden (ESG).
-
 ### Documentos do Fundo BR GOLD
 
 📄 [**Ficha de Cadastro de Participantes**](/documentation/BR%20GOLD%20FUNDO%20INVESTIMENTO%20-%20Ficha%20Cadastro%20Participantes.pdf)

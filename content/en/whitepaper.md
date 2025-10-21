@@ -163,12 +163,6 @@ ZIP: 30130-141
 
 ## Attachments
 
-### Legal Documents
-
-📄 [**Share Assignment and Transfer Agreement**](/documentation/MINUTA_CONTRATO_DE_CESSÃO_E_TRANSFERÊNCIA_DE_COTAS_150525%20-%20ESTRUTURART.pdf)
-
-This document establishes the legal terms and conditions for the assignment and transfer of shares related to the gold backing of the Estruturart Golden (ESG) token.
-
 ### BR GOLD Fund Documents
 
 📄 [**Participant Registration Form**](/documentation/BR%20GOLD%20FUNDO%20INVESTIMENTO%20-%20Ficha%20Cadastro%20Participantes.pdf)

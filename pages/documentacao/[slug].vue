@@ -141,10 +141,21 @@ const contentPath = computed(() => {
   return `/${locale.value.toLowerCase()}/${slug.value}`
 })
 
-// Fetch the document using Content v2 API
+// Fetch the document using Content v3 API
 const { data: doc } = await useAsyncData(
   `doc-${slug.value}-${locale.value}`,
-  () => queryContent(contentPath.value).findOne(),
+  async () => {
+    try {
+      // Query the content collection using v3 API
+      const result = await queryCollection('content')
+        .where('path', '=', contentPath.value)
+        .first()
+      return result
+    } catch (error) {
+      console.error('[Documentation] Error fetching document:', error)
+      return null
+    }
+  },
   {
     watch: [locale, slug]
   }
