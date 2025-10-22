@@ -896,6 +896,9 @@ const ogImageUrl = computed(() => {
   return `${baseUrl}/og-image.jpg`
 })
 
+// Use custom domain for og:url display in social media
+const publicUrl = 'https://estrutuartgolden.com'
+
 useHead({
   title: t('meta.home.title'),
   meta: [
@@ -906,7 +909,7 @@ useHead({
 
     // Open Graph / Facebook
     { property: 'og:type', content: 'website' },
-    { property: 'og:url', content: config.public.siteUrl },
+    { property: 'og:url', content: publicUrl },
     { property: 'og:title', content: t('meta.home.title') },
     { property: 'og:description', content: t('meta.home.description') },
     { property: 'og:image', content: ogImageUrl },
@@ -919,7 +922,7 @@ useHead({
 
     // Twitter
     { name: 'twitter:card', content: 'summary_large_image' },
-    { name: 'twitter:url', content: config.public.siteUrl },
+    { name: 'twitter:url', content: publicUrl },
     { name: 'twitter:title', content: t('meta.home.title') },
     { name: 'twitter:description', content: t('meta.home.description') },
     { name: 'twitter:image', content: ogImageUrl },
