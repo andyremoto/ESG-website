@@ -103,12 +103,18 @@ export default defineNuxtConfig({
         { rel: 'icon', type: 'image/png', href: '/favicon.png' }
       ],
       meta: [
+        // Basic SEO
+        { name: 'keywords', content: 'token lastreado em ouro, gold backed token, ESG, Estruturart Golden, blockchain, polygon, criptomoeda, investimento em ouro' },
+        { name: 'author', content: 'Estruturart Securitizadora S/A' },
+        { name: 'robots', content: 'index, follow' },
+
         // Open Graph / Facebook
         { property: 'og:type', content: 'website' },
         { property: 'og:site_name', content: 'Estruturart Golden (ESG)' },
         { property: 'og:image', content: '/og-image.jpg' },
         { property: 'og:image:width', content: '1200' },
         { property: 'og:image:height', content: '630' },
+        { property: 'og:image:type', content: 'image/jpeg' },
         { property: 'og:image:alt', content: 'Estruturart Golden - Token Lastreado em Ouro' },
         { property: 'og:locale', content: 'pt_BR' },
         { property: 'og:locale:alternate', content: 'en_US' },

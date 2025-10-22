@@ -900,17 +900,30 @@ useHead({
   title: t('meta.home.title'),
   meta: [
     { name: 'description', content: t('meta.home.description') },
+    { name: 'keywords', content: 'token lastreado em ouro, gold backed token, ESG, Estruturart Golden, blockchain, polygon, criptomoeda, investimento em ouro' },
+    { name: 'author', content: 'Estruturart Securitizadora S/A' },
+    { name: 'robots', content: 'index, follow' },
+
+    // Open Graph / Facebook
+    { property: 'og:type', content: 'website' },
+    { property: 'og:url', content: config.public.siteUrl },
     { property: 'og:title', content: t('meta.home.title') },
     { property: 'og:description', content: t('meta.home.description') },
-    { property: 'og:type', content: 'website' },
     { property: 'og:image', content: ogImageUrl },
     { property: 'og:image:width', content: '1200' },
     { property: 'og:image:height', content: '630' },
-    { property: 'og:url', content: config.public.siteUrl },
+    { property: 'og:image:type', content: 'image/jpeg' },
+    { property: 'og:image:alt', content: 'Estruturart Golden - Token Lastreado em Ouro' },
+    { property: 'og:locale', content: locale.value === 'pt-BR' ? 'pt_BR' : 'en_US' },
+    { property: 'og:site_name', content: 'Estruturart Golden (ESG)' },
+
+    // Twitter
     { name: 'twitter:card', content: 'summary_large_image' },
+    { name: 'twitter:url', content: config.public.siteUrl },
     { name: 'twitter:title', content: t('meta.home.title') },
     { name: 'twitter:description', content: t('meta.home.description') },
-    { name: 'twitter:image', content: ogImageUrl }
+    { name: 'twitter:image', content: ogImageUrl },
+    { name: 'twitter:image:alt', content: 'Estruturart Golden - Token Lastreado em Ouro' }
   ]
 })
 </script>
