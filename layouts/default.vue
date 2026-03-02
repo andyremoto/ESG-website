@@ -342,7 +342,7 @@
               </li>
               <li>
                 <a
-                  href="www.estruturartcapital.com.br"
+                  href="https://www.estruturartcapital.com.br"
                   target="_blank"
                   rel="noopener noreferrer"
                   class="text-white/80 hover:text-gold transition-all duration-300 inline-flex items-center gap-3 group text-base"

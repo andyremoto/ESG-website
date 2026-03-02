@@ -238,7 +238,7 @@
                       {{ t("contact.institutional.websiteBank") }}
                     </p>
                     <a
-                      href="www.estruturartcapital.com.br"
+                      href="https://www.estruturartcapital.com.br"
                       target="_blank"
                       rel="noopener noreferrer"
                       class="text-lg font-semibold text-orange hover:text-orange-light transition-colors inline-flex items-center gap-2 group"
