@@ -230,12 +230,12 @@
                     </a>
                   </div>
 
-                  <!-- Estruturart Bank Website -->
+                  <!-- Estruturart Capital Website -->
                   <div>
                     <p
                       class="text-sm text-gray-600 uppercase tracking-wider font-semibold mb-2"
                     >
-                      {{ t("contact.institutional.websiteBank") }}
+                      {{ t("contact.institutional.websiteCapital") }}
                     </p>
                     <a
                       href="https://www.estruturartcapital.com.br"
@@ -243,7 +243,7 @@
                       rel="noopener noreferrer"
                       class="text-lg font-semibold text-orange hover:text-orange-light transition-colors inline-flex items-center gap-2 group"
                     >
-                      {{ t("contact.institutional.websiteBankValue") }}
+                      {{ t("contact.institutional.websiteCapitalValue") }}
                       <svg
                         class="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
                         fill="none"

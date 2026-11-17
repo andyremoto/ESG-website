@@ -303,7 +303,7 @@
             <ul class="space-y-4">
               <li>
                 <a
-                  href="https://estruturart.com.br"
+                  href="https://www.estruturartcapital.com.br"
                   target="_blank"
                   rel="noopener noreferrer"
                   class="text-white/80 hover:text-gold transition-all duration-300 inline-flex items-center gap-3 group text-base"
@@ -324,45 +324,6 @@
                   <span
                     class="group-hover:translate-x-1 transition-transform"
                     >{{ t("footer.estruturartCapital") }}</span
-                  >
-                  <svg
-                    class="w-4 h-4 opacity-50 group-hover:opacity-100 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                    />
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.estruturartcapital.com.br"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="text-white/80 hover:text-gold transition-all duration-300 inline-flex items-center gap-3 group text-base"
-                >
-                  <svg
-                    class="w-5 h-5 text-gold/50 group-hover:text-gold transition-colors"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z"
-                    />
-                  </svg>
-                  <span
-                    class="group-hover:translate-x-1 transition-transform"
-                    >{{ t("footer.estruturartBank") }}</span
                   >
                   <svg
                     class="w-4 h-4 opacity-50 group-hover:opacity-100 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all"

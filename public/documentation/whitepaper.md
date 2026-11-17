@@ -11,7 +11,7 @@ Sites oficiais:
 
 https://www.estruturart.com.br
 
-https://www.estruturartbank.com.br
+https://www.estruturartcapital.com.br
 
 Pilares: lastro documentado, cálculo objetivo de preço (USD/BRL), transparência operacional e segurança do smart contract.
 
@@ -197,4 +197,4 @@ Contrato (PolygonScan): https://polygonscan.com/token/0xF5b5AefFFFbf838A1Da1f97d
 
 Site: https://www.estruturart.com.br
 
-Site Bancário: https://www.estruturartbank.com.br
+Estruturart Capital: https://www.estruturartcapital.com.br

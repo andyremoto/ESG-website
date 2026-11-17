@@ -120,7 +120,7 @@
     "subtitle": "Entre em contato com a equipe Estruturart Golden",
     "company": {
       "name": "Estruturart Securitizadora S/A",
-      "cnpj": "CNPJ: 10.664.744/0001-50"
+      "cnpj": "CNPJ: 52.247.633/0001-00"
     },
     "institutional": {
       "title": "Contato Institucional",
@@ -134,8 +134,8 @@
       "addressZip": "CEP: 30130-141",
       "website": "Website",
       "websiteValue": "estruturart.com.br",
-      "websiteBank": "Estruturart Bank",
-      "websiteBankValue": "estruturartbank.com.br"
+      "websiteCapital": "Estruturart Capital",
+      "websiteCapitalValue": "www.estruturartcapital.com.br"
     },
     "technical": {
       "title": "Informações Técnicas",
@@ -153,15 +153,14 @@
     "contract": "Contrato",
     "copyright": "© {year} Estruturart Securitizadora S/A. Todos os direitos reservados.",
     "company": "Estruturart Securitizadora S/A",
-    "cnpj": "CNPJ: 10.664.744/0001-50",
+    "cnpj": "CNPJ: 52.247.633/0001-00",
     "legal": "Legal",
     "terms": "Termos de Uso",
     "privacy": "Privacidade",
     "documentation": "Documentação",
     "social": "Redes Sociais",
     "groupCompanies": "Empresas do Grupo",
-    "estruturartCapital": "Estruturart Capital",
-    "estruturartBank": "Estruturart Bank"
+    "estruturartCapital": "Estruturart Capital"
   },
   "legal": {
     "terms": {
